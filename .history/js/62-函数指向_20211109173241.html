@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr1=['a','b','c'];
+
+        let arr2=arr1;  // 将 arr1 赋值给 arr2，其实是让 arr2 指向 arr1 的内存地址
+        console.log('arr1:'+arr1);
+        console.log('arr2:'+arr2);
+        console.log('----------------');
+        arr2.push('d');
+        console.log('arr1:'+arr1);
+        console.log('arr2:'+arr2);
+
+        let arr3=['a','b','c'];
+
+        let arr4=[...arr3];
+        
+
+
+    </script>
+</body>
+</html>

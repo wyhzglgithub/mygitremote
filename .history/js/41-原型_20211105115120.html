@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 一、建立一个对象
+        function Cat(name){
+            this.name = name;
+        }
+
+        Cat.prototype.eat = function(foo){
+            console.log("我吃 " + foo + " 呢");
+        }
+
+        // 二、测试原型对象
+        var a = new Cat("黑猫");
+        a.eat("鱼");
+
+        var b = new Cat("白猫");
+        b.eat("肉");
+
+        console.log(Cat._prototype_)
+    </script>
+</body>
+</html>

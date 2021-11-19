@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style为行内对象</title>
+    <style>
+        .box1{
+            border: 6px solid chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1" style="width: 100px;height: 100px;background-color: brown;"></div>
+
+    <script>
+        var box1 = document.getElementsByClassName("box1")[0];
+
+        console.log(box1.style.backgroundColor);
+        console.log(typeof box1.style);
+        console.log(box1.stype.border); // stype对象只能取
+    </script>
+
+</body>
+</html>
